@@ -261,16 +261,31 @@ ServerEvents.recipes(event => {
         G: 'matc:imperium_crystal[]',
         E: 'mysticalagriculture:supremium_essence'
     })
+    event.remove({ output: 'naturesaura:bottle_two_the_rebottling' })
+    event.shaped('naturesaura:bottle_two_the_rebottling', [
+        'BG',
+    ], {
+        B: 'minecraft:glass_bottle',
+        G:'naturesaura:gold_leaf'
+    })
+    event.remove({ output: 'apothic_enchanting:seashelf' })
+    event.shaped('apothic_enchanting:seashelf', [
+        'PPP',
+        'BEF',
+        'PPP'
+    ], {
+        B: 'naturesaura:aura_bottle[naturesaura:aura_bottle_data={aura_type:"naturesaura:overworld"}]',
+        P: 'minecraft:prismarine_bricks',
+        F: 'minecraft:pufferfish',
+        E: Ingredient.of('#c:bookshelves')
+    })
 })
 
 
-// 1. Détecter la mort des boss (Apotheosis et Wilden Chimera)
 EntityEvents.death(event => {
     const { entity, source } = event;
     const player = source.player;
 
-    // Si le tueur n'est pas un joueur (ou si un familier/sort tue le boss, on cherche le joueur le plus proche)
-    // Astuce importante avec Ars Nouveau car les sorts n'attribuent pas toujours directement le kill au joueur
     let targetPlayers = player ? [player] : event.level.getEntitiesWithin(entity.boundingBox.inflate(32)).filter(e => e.isPlayer());
 
     if (targetPlayers.length === 0) return;
@@ -278,15 +293,12 @@ EntityEvents.death(event => {
     let nbtString = entity.nbt.toString();
 
     for (let p of targetPlayers) {
-        // --- CONDITION 1 : Boss d'Apotheosis pour le NETHER ---
         if (nbtString.includes('apoth.boss')) {
             if (!p.persistentData.getBoolean('nether_unlocked')) {
                 p.persistentData.putBoolean('nether_unlocked', true);
                 p.tell(Text.gold("🔥 Vous avez vaincu un Boss épique d'Apotheosis ! L'accès au Nether est désormais déverrouillé."));
             }
         }
-
-        // --- CONDITION 2 : Wilden Chimera pour L'END ---
         if (entity.type === 'ars_nouveau:wilden_boss') {
             if (!p.persistentData.getBoolean('end_unlocked')) {
                 p.persistentData.putBoolean('end_unlocked', true);
@@ -296,14 +308,12 @@ EntityEvents.death(event => {
     }
 });
 
-// 2. Bloquer l'accès aux dimensions tant que les boss ne sont pas vaincus
 NativeEvents.onEvent('net.neoforged.neoforge.event.entity.EntityTravelToDimensionEvent', event => {
     const entity = event.entity;
     if (!entity.isPlayer()) return;
 
     const targetDim = event.dimension.location().toString();
 
-    // --- BLOCAGE DU NETHER ---
     if (targetDim === 'minecraft:the_nether') {
         if (!entity.persistentData.getBoolean('nether_unlocked')) {
             entity.setStatusMessage(Text.red("🔒 Le portail vous repousse ! Vous devez d'abord vaincre un Boss épique d'Apotheosis."));
@@ -311,11 +321,37 @@ NativeEvents.onEvent('net.neoforged.neoforge.event.entity.EntityTravelToDimensio
         }
     }
 
-    // --- BLOCAGE DE L'END ---
     if (targetDim === 'minecraft:the_end') {
         if (!entity.persistentData.getBoolean('end_unlocked')) {
             entity.setStatusMessage(Text.darkPurple("🔒 Le vide vous rejette ! Vous devez d'abord vaincre la Wilden Chimera."));
             event.setCanceled(true);
         }
     }
+});
+
+PlayerEvents.loggedIn(event => {
+  const player = event.player;
+
+  if (!player.tags.contains('first_join_all_books')) {
+    player.tags.add('first_join_all_books');
+    
+
+    player.give('akashictome:tome');
+    player.give('astralsorcery:tome');
+    player.give('ars_nouveau:worn_notebook');
+    player.give('powah:book');
+    player.give('rftoolsbase:manual');
+    player.give('ftbquests:book');
+    player.give('cookingforblockheads:recipe_book');
+
+    event.server.runCommand(`execute as ${player.username} run give @s patchouli:guide_book[patchouli:book="apotheosis:apoth_chronicle"]`);
+    event.server.runCommand(`execute as ${player.username} run give @s patchouli:guide_book[patchouli:book="mysticalagriculture:guide"]`);
+    event.server.runCommand(`execute as ${player.username} run give @s patchouli:guide_book[patchouli:book="naturesaura:book"]`);
+    event.server.runCommand(`execute as ${player.username} run give @s patchouli:guide_book[patchouli:book="ad_astra:astrodux"]`);
+    player.tell('§a[KubeJS] Attribution de tous les livres de départ...');
+    player.tell("Pour accèder aux quête vous pouvez : -Utiliser le quest book");
+    player.tell("-Utiliser le quest book");
+    player.tell("-CLiquer tout en haut à gauche dans votre inventaire");
+    player.tell("-Bind une touche dans Option->Controls->Key Binds");
+  }
 });

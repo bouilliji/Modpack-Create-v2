@@ -72,6 +72,10 @@
   "ftbquests": {
     "barrier": true
   },
+  "applied_oritech": {
+    "grid_node_state": true,
+    "pattern_provider": true
+  },
   "createsifter": {
     "data": true
   },
@@ -123,18 +127,23 @@
   "mysticalagradditions": {
     "infused_farmland": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "waystones": {
     "waystone": true
+  },
+  "cookingforblockheads": {
+    "fridge": true,
+    "oven": true,
+    "sink": true,
+    "preservation_chamber": true,
+    "milk_jar": true,
+    "toaster": true
   },
   "mysticalagriculture": {
     "infused_farmland": true,
     "crop": true,
     "inferium_crop": true
-  },
-  "storagedrawers": {
-    "display.stacklimit": true,
-    "main": true,
-    "display.content": true,
-    "display.status": true
   }
 }
