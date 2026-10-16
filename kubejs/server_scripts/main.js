@@ -279,6 +279,15 @@ ServerEvents.recipes(event => {
         F: 'minecraft:pufferfish',
         E: Ingredient.of('#c:bookshelves')
     })
+    event.shaped('astralsorcery:altar_illumination', [
+        'MMM',
+        'MCM',
+        ' D '
+    ], {
+        D: 'ad_astra:desh_ingot',
+        M: 'astralsorcery:marble_raw',
+        C: 'minecraft:crafting_table',
+    })
 })
 
 
@@ -349,7 +358,7 @@ PlayerEvents.loggedIn(event => {
     event.server.runCommand(`execute as ${player.username} run give @s patchouli:guide_book[patchouli:book="naturesaura:book"]`);
     event.server.runCommand(`execute as ${player.username} run give @s patchouli:guide_book[patchouli:book="ad_astra:astrodux"]`);
     player.tell('§a[KubeJS] Attribution de tous les livres de départ...');
-    player.tell("Pour accèder aux quête vous pouvez : -Utiliser le quest book");
+    player.tell("Pour accèder aux quête vous pouvez :");
     player.tell("-Utiliser le quest book");
     player.tell("-CLiquer tout en haut à gauche dans votre inventaire");
     player.tell("-Bind une touche dans Option->Controls->Key Binds");

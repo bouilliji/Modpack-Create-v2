@@ -16,6 +16,14 @@
 		"minecraft:iron_ingot=#D8E8FF",
 		"minecraft:gold_ingot=#FFE060",
 		"minecraft:diamond=#70F0F0",
+		"minecraft:netherite_ingot=#B890E8",
+		"minecraft:trident=#70E8D0",
+		"minecraft:mace=#C8D4E8",
+		"#minecraft:planks=#E8B070",
+		"#minecraft:stone_tool_materials=#B8C4D8",
+		"minecraft:iron_ingot=#D8E8FF",
+		"minecraft:gold_ingot=#FFE060",
+		"minecraft:diamond=#70F0F0",
 		"minecraft:netherite_ingot=#B890E8"
 	],
 	// Trail color for weapons with no matching material entry

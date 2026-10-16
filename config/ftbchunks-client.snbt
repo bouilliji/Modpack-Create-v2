@@ -137,7 +137,15 @@
 		# Show entity heads on minimap
 		# Default: true
 		entity_heads: true
-		entity_icon: { }
+		entity_icon: {
+			"naturalist:butterfly": true
+			"minecraft:trader_llama": true
+			"minecraft:chicken": true
+			"ars_nouveau:whirlisprig": true
+			"naturalist:rat": true
+			"minecraft:slime": true
+			"minecraft:wandering_trader": true
+		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
 		# Default: 0.5
@@ -256,11 +264,11 @@
 		
 		# Enables creation of death waypoints
 		# Default: true
-		death_waypoints: true
+		death_waypoints: false
 		
 		# Show waypoints in world
 		# Default: true
-		in_world_waypoints: true
+		in_world_waypoints: false
 		
 		# Minimum distance before waypoint dots start to fade
 		# Default: 1.0
