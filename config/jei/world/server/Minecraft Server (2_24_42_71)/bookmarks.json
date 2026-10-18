@@ -1,0 +1,8 @@
+[
+  {"version":2},
+  {"recipe":"mob_grinding_utils:recipe_saw_upgrade_arthropod","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"minecraft:iron_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"minecraft:redstone_lamp","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"mob_grinding_utils:fan_upgrade_width"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mob_grinding_utils:fan_upgrade_speed"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

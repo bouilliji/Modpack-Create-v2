@@ -1,0 +1,8 @@
+[
+  {"version":2},
+  {"recipe":"powah:crafting/energizing_orb","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"minecraft:black_stained_glass"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powah:dielectric_casing"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"powah:dielectric_rod_horizontal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:celestial_crystal","components":"{\"astralsorcery:crystal_attributes\":{attributes:[{property:\"astralsorcery:size\",tier:2},{property:\"astralsorcery:cut\",tier:2},{property:\"astralsorcery:purity\",tier:2}],properties:{generate_count:6,max_tier_count:14}}}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

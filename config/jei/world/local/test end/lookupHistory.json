@@ -1,0 +1,20 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"powah:energizing_orb"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"powah:crafting/energizing_orb","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"powah:dielectric_casing"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ad_astra:nasa_workbench"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:black_stained_glass"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:celestial_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:starmetal_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:celestial_crystal_cluster","components":"{\"minecraft:damage\":0}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:starmetal_ore"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:raw_starmetal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:stardust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:tome"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:attuned_rock_crystal","components":"{\"astralsorcery:attuned_constellation\":{constellation:\"astralsorcery:aevitas\"}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:attuned_rock_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:crystal_sword","components":"{\"astralsorcery:crystal_attributes\":{attributes:[{property:\"astralsorcery:size\",tier:16},{property:\"astralsorcery:cut\",tier:8},{property:\"astralsorcery:tool_efficiency\",tier:6},{property:\"astralsorcery:tool_durability\",tier:6}],properties:{generate_count:0,max_tier_count:0}},\"minecraft:attribute_modifiers\":{modifiers:[{amount:4.0d,id:\"minecraft:base_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_damage\"},{amount:-2.4000000953674316d,id:\"minecraft:base_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_speed\"},{amount:12.0d,id:\"astralsorcery:crystal_properties_added_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_damage\"}]}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:rock_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"astralsorcery:altar_illumination"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

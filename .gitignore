@@ -1,6 +1,15 @@
 *
+
 !mods/
+!mods/**
+
 !config/
+!config/**
+
 !defaultconfigs/
+!defaultconfigs/**
+
 !kubejs/
+!kubejs/**
+
 !.gitignore
