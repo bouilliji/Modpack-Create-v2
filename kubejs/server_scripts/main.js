@@ -289,6 +289,50 @@ ServerEvents.recipes(event => {
         C: 'minecraft:crafting_table',
     }),
     event.remove("createdieselgenerators:compat/electroenergetics/copper_wire")
+    Ingredient.of(/^artifacts:/).itemIds.forEach(id => {
+
+        if (id.includes('chalk') || id.includes('researching_table') || id.includes('mimic')) return;
+
+        event.shaped(Item.of(id, 1), [
+            'DDD',
+            'DAD',
+            'DDD'
+        ], {
+            D: 'minecraft:diamond',
+            A: id
+        })
+        .keepIngredient(id)
+        .id(`kubejs:duplication_${id.replace(':', '_')}`)
+    })
+    Ingredient.of(/^relics:/).itemIds.forEach(id => {
+
+        if (id.includes('chalk') || id.includes('researching_table') || id.includes('mimic') || id.includes('phantom_block')) return;
+
+        event.shaped(Item.of(id, 1), [
+            ' D ',
+            'DAD',
+            ' D '
+        ], {
+            D: 'powah:crystal_niotic',
+            A: id
+        })
+        .keepIngredient(id)
+        .id(`kubejs:duplication_${id.replace(':', '_')}`)
+    })
+    let allHats = Ingredient.of(/^simplehats:/).itemIds.filter(id => 
+        !id.includes('hatbag') && 
+        !id.includes('hatscraps') && 
+        !id.includes('hatdisplay') && 
+        !id.includes('haticon')
+    );
+
+    allHats.forEach(targetHat => {
+        event.shapeless(Item.of(targetHat, 1), [
+            targetHat,                    
+        ])
+        .keepIngredient(targetHat)        
+        .id(`kubejs:hat_dup_${targetHat.replace(':', '_')}`);
+    });
 })
 
 
