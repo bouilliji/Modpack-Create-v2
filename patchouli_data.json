@@ -1,0 +1,21 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "naturesaura:book": {
+      "viewedEntries": [
+        "naturesaura:intro/aura",
+        "naturesaura:intro/botany",
+        "naturesaura:intro/intro",
+        "naturesaura:practices/gold_trees"
+      ],
+      "bookmarks": [
+        {
+          "entry": "naturesaura:intro/aura",
+          "page": 2
+        }
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

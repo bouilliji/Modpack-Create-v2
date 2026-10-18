@@ -1,0 +1,5 @@
+/gamerule doDaylightCycle false
+/gamerule doWeatherCycle false
+/reload
+/tell Nexoblue vas dormir
+/reload

@@ -1,15 +1,24 @@
+# Tout ignorer
 *
 
+# Dossiers à garder
 !mods/
-!mods/**
-
 !config/
-!config/**
-
 !defaultconfigs/
-!defaultconfigs/**
-
 !kubejs/
-!kubejs/**
 
+# Extensions texte à versionner
+!**/*.txt
+!**/*.cfg
+!**/*.toml
+!**/*.json
+!**/*.json5
+!**/*.js
+!**/*.zs
+!**/*.lang
+!**/*.properties
+!**/*.mcmeta
+
+# Racine
 !.gitignore
+!README.md
