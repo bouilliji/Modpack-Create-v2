@@ -3,3 +3,13 @@
 /reload
 /tell Nexoblue vas dormir
 /reload
+/kubejs errors server
+/reload
+/kubejs errors server
+/reload
+/kubejs errors server
+/reload
+/kubejs hand
+/kubejs hotbar
+/kubejs hand
+/reload
