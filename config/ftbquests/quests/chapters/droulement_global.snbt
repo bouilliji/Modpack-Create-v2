@@ -1,0 +1,267 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "droulement_global"
+	group: ""
+	id: "1F35CD4FC3193B00"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["776C10B0CDC39D58"]
+			icon: {
+				id: "create:cogwheel"
+			}
+			id: "17FC4E32DE99575C"
+			tasks: [
+				{
+					id: "040FA1AC2F93345E"
+					item: { count: 1, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					id: "433C3B131B626353"
+					item: { count: 1, id: "create:mechanical_press" }
+					type: "item"
+				}
+				{
+					id: "19D17D3081291085"
+					item: { count: 1, id: "create:basin" }
+					type: "item"
+				}
+				{
+					id: "2D0C688674EE58E9"
+					item: { count: 1, id: "create:mechanical_mixer" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17FC4E32DE99575C"]
+			id: "226C4277E5C46F73"
+			tasks: [{
+				id: "0366C720203B3700"
+				item: { count: 1, id: "naturesaura:gold_fiber" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["226C4277E5C46F73"]
+			id: "54D0B6F59C56E30E"
+			tasks: [{
+				id: "2250152C189DDAF3"
+				item: { count: 1, id: "apotheosis:gem_dust" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17FC4E32DE99575C"]
+			id: "39310180892F2BA8"
+			tasks: [{
+				id: "7ACFFC7DBCB73303"
+				item: { count: 1, id: "enderio:void_chassis" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["17FC4E32DE99575C"]
+			id: "7FD05F16C1C702FF"
+			tasks: [{
+				id: "3F7B86EB04A20496"
+				item: { count: 1, id: "mob_grinding_utils:absorption_hopper" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["17FC4E32DE99575C"]
+			id: "04C9EB5EC750FC26"
+			tasks: [{
+				id: "7E0CDEA68DCE9DC3"
+				item: { count: 1, id: "ae2:inscriber" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["54D0B6F59C56E30E"]
+			id: "48D1079866D70624"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "0864D7E9DEB7DB41"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["48D1079866D70624"]
+			id: "0B9EACCF4E801BF1"
+			tasks: [{
+				id: "0A9623550AC656A3"
+				item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B9EACCF4E801BF1"]
+			id: "7E9E896FA2446589"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "166AA6321A51E52C"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7E9E896FA2446589"]
+			id: "221EA9F18C3B3FDE"
+			tasks: [{
+				id: "7BD7099CFB606133"
+				item: { count: 1, id: "ad_astra:nasa_workbench" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7E9E896FA2446589"]
+			id: "7059F1464A19A5FE"
+			tasks: [{
+				id: "692B15599186C8F7"
+				item: { count: 1, id: "rftoolsbase:machine_frame" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["221EA9F18C3B3FDE"]
+			id: "0F75728E894B8A53"
+			tasks: [{
+				id: "14E5568E30AC414F"
+				item: { count: 1, id: "astralsorcery:altar_illumination" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0F75728E894B8A53"]
+			id: "4535CD39B64EB4C9"
+			tasks: [{
+				id: "48144C3188B989FD"
+				item: { count: 1, id: "powah:energizing_orb" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4535CD39B64EB4C9"]
+			icon: {
+				id: "forbidden_arcanus:hephaestus_forge_tier_1"
+			}
+			id: "075BB54FF46E4C47"
+			tasks: [
+				{
+					count: 48L
+					id: "10FC4CDDBBAA087C"
+					item: { count: 1, id: "forbidden_arcanus:polished_darkstone" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5E60E05DEB158393"
+					item: { count: 1, id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "32692F6DF2ACDDB1"
+					item: { count: 1, id: "forbidden_arcanus:chiseled_arcane_polished_darkstone" }
+					type: "item"
+				}
+				{
+					id: "01010A8D2EC41E26"
+					item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
+					type: "item"
+				}
+				{
+					id: "28936129E6C3AB3F"
+					item: { count: 1, id: "minecraft:smithing_table" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["075BB54FF46E4C47"]
+			id: "6F62F1DE2733760A"
+			tasks: [{
+				id: "09BDBA26D4F7DA19"
+				item: { count: 1, id: "oritech:machine_core_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["6F62F1DE2733760A"]
+			id: "636C211B88248B99"
+			tasks: [{
+				id: "004E4C13977AC9A8"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["636C211B88248B99"]
+			id: "14042C9610DCEAC7"
+			tasks: [{
+				id: "1175E6576BF1F44D"
+				item: { count: 1, id: "draconicevolution:draconium_core" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["73CCD6709A0B3284"]
+			id: "776C10B0CDC39D58"
+			tasks: [{
+				id: "34F6DAA0584FB103"
+				item: { count: 1, id: "akashictome:tome" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "73CCD6709A0B3284"
+			tasks: [{
+				id: "422003D564A5690D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+}

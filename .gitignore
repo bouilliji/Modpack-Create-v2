@@ -1,11 +1,14 @@
 # Tout ignorer
 *
 
+/*
 # Dossiers à garder
-!mods/
-!config/
-!defaultconfigs/
-!kubejs/
+!*/
+!config/**
+!defaultconfigs/**
+!kubejs/**
+
+*.png
 
 # Extensions texte à versionner
 !**/*.txt
@@ -18,6 +21,43 @@
 !**/*.lang
 !**/*.properties
 !**/*.mcmeta
+
+logs/
+crash-reports/
+screenshots/
+saves/
+backups/
+journeymap/
+xaerominimap/
+xaeroworldmap/
+downloads/
+debug/
+local/
+run/
+.cache/
+.mixin.out/
+dynamic-data-pack-cache/
+dynamic-resource-pack-cache/
+moddata/
+mods/
+moonlight-global-datapacks/
+patchouli_books/
+resourcepacks/
+replay/
+schematics/
+shaderpacks/
+
+command_history.txt
+emi.json
+minecraftinstance.json
+options.txt
+patchouli_data.json
+user-prefs.json
+usercache.json
+usernamecache.json
+
+
+
 
 # Racine
 !.gitignore

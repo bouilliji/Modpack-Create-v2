@@ -1,0 +1,90 @@
+{
+	chapter.1F35CD4FC3193B00.title: "Déroulement Global"
+	quest.04C9EB5EC750FC26.quest_desc: [
+		"C'est le mod de stockage par excellence vous pourrez automatiser des crafts ou simplement stocker votre équipement."
+		""
+		"&oComme pour create vous avez un guide intégré mais en appuyant sur ctrl cette fois.&r"
+	]
+	quest.04C9EB5EC750FC26.title: "AE2"
+	quest.075BB54FF46E4C47.quest_desc: ["Mod de magie mystérieux."]
+	quest.075BB54FF46E4C47.title: "Forbidden and Arcanus"
+	quest.0B9EACCF4E801BF1.quest_desc: [
+		"Mod magique qui fonction à l'aide de &nsource&r il permet de :"
+		"-Faire ces propres sorts à l'aide d'un livre et de glyphs."
+		"-Des petites automatisations magiques."
+		""
+		"&oLe livre de sort esr craftable même avant le nether."
+		"&oEncore une fois pour plus d'infos regarder le livre dédié.&r&r"
+	]
+	quest.0B9EACCF4E801BF1.title: "Ars Nouveau"
+	quest.0F75728E894B8A53.quest_desc: [
+		"Mod de magie avec les étoiles vous pouvez trouver le marbre nécessaire à sont commencement dans l'end."
+		""
+		"&oComme d'habitude regardez le livre.&r"
+	]
+	quest.0F75728E894B8A53.title: "Astral Sorcery"
+	quest.14042C9610DCEAC7.quest_desc: [
+		"Gros mod tech : "
+		"-gros stockage énergie"
+		"-armure, armes, outils endgame"
+		"..."
+	]
+	quest.14042C9610DCEAC7.title: "Draconic Evolution"
+	quest.17FC4E32DE99575C.quest_desc: [
+		"Avec Create vous pouvez faire des usines ou des contraptions basés sur le mouvement mécanique."
+		""
+		"&oPS : Vous pouvez voir tous les assemblages et structures possible avec un guide intégré en appuyant sur z en regardant un item.&r"
+	]
+	quest.221EA9F18C3B3FDE.quest_desc: [
+		"Mod d'exploration spaciale dans notre système solaire et un autre avec qu'une planète avec ses propres minerais."
+		""
+		"&oAllez voir le livre de ce mod&r"
+	]
+	quest.221EA9F18C3B3FDE.title: "Ad Astra"
+	quest.226C4277E5C46F73.quest_desc: [
+		"Ce mod joue avec une magie environnementale propre à chaque dimension."
+		""
+		"&oPour plus d'infos allez voir le livre du mod.&r"
+	]
+	quest.226C4277E5C46F73.title: "Nature's Aura"
+	quest.39310180892F2BA8.quest_desc: ["Mod tech early game pour les alliages, cablages et autres."]
+	quest.39310180892F2BA8.title: "EnderIO"
+	quest.4535CD39B64EB4C9.quest_desc: [
+		"Mod tech de production d'énergie."
+		""
+		"&oRegardez le livre.&r"
+	]
+	quest.4535CD39B64EB4C9.title: "Powah"
+	quest.48D1079866D70624.quest_desc: ["Une dimension infernale avec quelques ajouts en plus."]
+	quest.54D0B6F59C56E30E.quest_desc: [
+		"Ce mod rajoute beaucoup de choses dont :"
+		"-Des tables d'enchantements plus puissantes."
+		"-Des miniboss qui apparaissent passivement."
+		"-Des attributs customisables sur vos armes, outils et armures."
+		""
+		"&oIl y a aussi un livre de ce mod.&r"
+	]
+	quest.54D0B6F59C56E30E.title: "Apotheosis"
+	quest.636C211B88248B99.quest_desc: ["Mod tech qui joue avec les gazs, fluides, alliages..."]
+	quest.636C211B88248B99.title: "Mekanism"
+	quest.6F62F1DE2733760A.quest_desc: ["Mod end game tech."]
+	quest.6F62F1DE2733760A.title: "Oritech"
+	quest.7059F1464A19A5FE.quest_desc: ["Très bon mod de cablage."]
+	quest.7059F1464A19A5FE.title: "Xnet"
+	quest.73CCD6709A0B3284.quest_desc: [
+		"JEI est le mod de recherche d'objet."
+		""
+		"&oInfos utiles :"
+		"-Pour chercher un mod spécifique cherchez avec @ devant"
+		"-Vous pouvez épingler/désépingler un craft avec q"
+		"-Pour voir la recette d'un item faites r"
+		"-Pour voir à quoi sert un item faites u&r"
+	]
+	quest.776C10B0CDC39D58.quest_desc: ["Pour éviter d'encombrer votre inventaire avec tous les livres de mods vous pouvez les combiner avec l'Akashic Tome &lun par un&r."]
+	quest.7E9E896FA2446589.quest_desc: ["Dimension où loge différents dragons."]
+	quest.7FD05F16C1C702FF.quest_desc: ["Construisez votre meilleure ferme à mobs avec ce mod !!!"]
+	quest.7FD05F16C1C702FF.title: "Mob Grinding Utils"
+	task.0864D7E9DEB7DB41.title: "Nether"
+	task.166AA6321A51E52C.title: "End"
+	task.422003D564A5690D.title: "JEI"
+}
