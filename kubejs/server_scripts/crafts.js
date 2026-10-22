@@ -329,4 +329,20 @@ ServerEvents.recipes(event => {
         .keepIngredient(targetHat)        
         .id(`kubejs:hat_dup_${targetHat.replace(':', '_')}`);
     });
+    event.recipes.create.mixing(
+        'bhc:green_heart',                  
+        ['mysticalagriculture:dragon_egg_essence', 'mysticalagriculture:dragon_egg_essence', 'mysticalagriculture:dragon_egg_essence', 'mysticalagriculture:dragon_egg_essence'] 
+    ).superheated()
+    event.recipes.create.compacting(
+        'mysticalagradditions:dragon_scale',                  
+        ['mysticalagriculture:dragon_egg_essence', 'mysticalagriculture:dragon_egg_essence', 'mysticalagriculture:dragon_egg_essence', 'mysticalagriculture:dragon_egg_essence'] 
+    ).superheated()
+    event.recipes.create.mixing(
+        '2x minecraft:dirt', 
+        [
+            Ingredient.of('#minecraft:saplings'),
+            Ingredient.of('#minecraft:saplings'), 
+            Fluid.of('minecraft:water', 1000)
+        ]
+    )
 })
