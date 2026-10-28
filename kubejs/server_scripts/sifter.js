@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    ['create:crushed_raw_osmium', 'create:crushed_raw_platinum', 'create:crushed_raw_tin', 'create:crushed_raw_lead', 'create:crushed_raw_uranium', 'create:crushed_raw_nickel', 'tfmg:crushed_raw_lithium', 'powah:uraninite_raw'].forEach(element => {
+    ['create:crushed_raw_osmium', 'create:crushed_raw_platinum', 'create:crushed_raw_tin', 'create:crushed_raw_lead', 'create:crushed_raw_uranium', 'create:crushed_raw_nickel', 'tfmg:crushed_raw_lithium', 'powah:uraninite_raw', 'tfmg:bauxite_powder'].forEach(element => {
         event.custom({
             type: "createsifter:sifting",
             input: {

@@ -65,6 +65,9 @@
   "apothic_spawners": {
     "spawner": true
   },
+  "entangled": {
+    "entangled_block_component": true
+  },
   "ftbquests": {
     "barrier": true
   },
@@ -81,6 +84,10 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
+  },
+  "extendedae": {
+    "jade_chamber": true,
+    "jade_wireless": true
   },
   "ae2": {
     "part_icon": true,

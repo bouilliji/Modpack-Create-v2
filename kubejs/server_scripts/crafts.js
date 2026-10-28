@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
     ], {
         R: 'powah:dielectric_rod_horizontal',
         P: 'powah:dielectric_casing',
-        C: Ingredient.of('#astralsorcery:celestial_crystal'),
+        C: 'ad_astra:desh_ingot',
         G: Ingredient.of('#c:glass_blocks')
     })
     event.remove({ output: 'forbidden_arcanus:mundabitur_dust' })
@@ -345,4 +345,5 @@ ServerEvents.recipes(event => {
             Fluid.of('minecraft:water', 1000)
         ]
     )
+    event.smelting('tfmg:aluminum_ingot', 'tfmg:bauxite_powder')
 })
