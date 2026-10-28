@@ -101,6 +101,9 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "hammerlib": {
+    "root": true
+  },
   "enderio": {
     "soul_bound": true
   },

@@ -24,6 +24,10 @@
 		"//": "When enables, the mod works with double trapdoors.",
 		"value": false
 	},
+	"doorBlockBlacklist": {
+		"//": "A comma separated list of block ids the mod ignores, so they keep opening one at a time. Works for doors, trapdoors and fence gates. For example 'create:andesite_door,supplementaries:gold_door'.",
+		"value": ""
+	},
 	"enableModIncompatibilityCheck": {
 		"//": "Checks if there are other mods loaded with double door functionality, such as Quark. If found, it edits a line in their config to disable double doors. Fixes doors not opening due to code being ran twice.",
 		"value": true
